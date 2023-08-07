@@ -1,0 +1,16 @@
+SETTING UP A SIMPLE STATIC WEBSITE ON AMAZON S3
+
+STEP 1 : Create an S3 Bucket on AWS
+      Navigate to the Amazon S3 service in the AWS Management Console and Create S3 Bucket. Enter a unique name for your bucket (bucket names must be globally unique across all AWS accounts).
+
+STEP 2 : Enabling and Configuring Static Website Hosting
+      After creating the bucket, click on its name to go to the bucket details page. Click on the "Properties" tab, then enable the "Static website hosting". Enter the index document name (e.g., "index.html") and optionally the error document name (e.g., "error.html") if you want to provide a custom error page.
+
+STEP 3 : Upload Website Content to the S3 Bucket
+      Upload your website files such as HTML, CSS, JavaScript, and any other assets into the S3 bucket. You can use the AWS Management Console, AWS CLI, or any S3-compatible tools to upload your files.
+
+STEP 4 : Setting up Permissions in S3 Bucket
+      Ensure that the objects you uploaded have appropriate permissions so that the public can access them. Select the bucket and Configure a bucket policy to allow public access to objects within the bucket.
+
+STEP 5 : Accessing the Website Through URL
+      Open a web browser and enter the endpoint URL of the index.html file. You should be able to see your static website hosted on Amazon S3.
